@@ -1,0 +1,30 @@
+# This Is A Generic Ignore File. Not That Anyone Would Use These, But Rest Assured...
+# If You Did, You'd Be Safe. Feel Free To Add To This. Because, Why Not?
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Mac Junk
+.DS_Store
+
+# Windows Junk
+Thumbs.db
+
+# Virtual Environments
+.venv/
+venv/
+env/
+
+# Python Tool Caches
+.pytest_cache/
+.mypy_cache/
+
+# Local Temp
+tmp/
+temp/
+
+# Local Secrets
+.env
+secrets.py
