@@ -2,6 +2,7 @@
 
 from core.menuScreen import MenuScreen
 from apps.games.pongApp import PongAppScreen
+from apps.games.snakeApp import SnakeAppScreen
 from apps.games.lifePatternMenu import LifePatternMenuScreen
 
 
@@ -14,7 +15,7 @@ class GamesMenuScreen(MenuScreen):
             },
             {
                 "label": "Snake",
-                "action": self.placeholderSnake
+                "action": self.openSnake
             },
             {
                 "label": "Life",
@@ -29,8 +30,10 @@ class GamesMenuScreen(MenuScreen):
             PongAppScreen(self.appManager, self.hardware, self)
         )
 
-    def placeholderSnake(self):
-        pass
+    def openSnake(self):
+        self.appManager.setScreen(
+            SnakeAppScreen(self.appManager, self.hardware, self)
+        )
 
     def openLifeMenu(self):
         self.appManager.setScreen(
