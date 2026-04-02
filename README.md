@@ -14,6 +14,12 @@ Instead of one-off scripts, uPyPortal provides a structured system for building 
 
 ---
 
+## Documentation
+
+View full documentation here:
+
+[Docs](docs/)
+
 ## Key Features
 
 * **On-Device WiFi Setup**
