@@ -101,6 +101,13 @@ mpremote connect /dev/ttyUSB0 cp -r ./uPyPortal/ :
 Use the deployment script designed for multi-file MicroPython projects:
 https://github.com/RY3BRE4D/uPyDeploy
 
+uPyDeploy is ideal for deploying larger, modular MicroPython projects like uPyPortal.
+It supports project-level exclusions using a `.uPyDeployignore` file, allowing you to omit non-essential files (such as docs or development artifacts) from deployment.
+
+For more details, see:
+
+[Deployment Guide](docs/deployment.md)
+
 ---
 
 ### 3. Run
@@ -207,7 +214,7 @@ Feel free to:
 
 ## Philosophy
 
-Embedded devices can be more than just scripts. They can be sophisticated systems. 
+Embedded devices can be more than just scripts. They can be sophisticated systems.
 Also, I grew tired of hardcoding my WiFi credentials. A solution for that grew into
 a modular system that can serve as the basis for infinite device possibilties.
 
